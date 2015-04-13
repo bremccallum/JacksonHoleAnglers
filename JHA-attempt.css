@@ -1,5 +1,7 @@
 body {
     background-color: #e8e3d9;
+    font-family: 'Merriweather', serif;
+    color: #2b2b2b;
 }
 header,
 main,
@@ -14,16 +16,17 @@ a {
 h2 {
     text-align: left;
     font-size: 2em;
+    font-weight: 900;
 }
 h3 {
     text-align: left;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.08em;
+    line-height: 1.6em;
 }
 h1 {
     text-align: left;
-    font-family: serif;
     font-size: 4em;
     font-weight: bold;
     padding: 0;
@@ -38,7 +41,7 @@ h1 {
     border: none;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #000;
+    color: #2b2b2b;
 }
 .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     background-color: #517d4b;
@@ -54,10 +57,6 @@ h1 {
   width: 5%;
 }
 .carousel-caption {
-    padding-right: 25px;
-    margin-bottom: 100px;
-    top: 50px;
-    background-color: rgba(255, 255, 255, 0.6);
     text-shadow: none;
     color: #000;
 }
@@ -93,6 +92,8 @@ main .sidebar {
 }
 main .sidebar .btn {
     width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
     border: none;
     border-radius: 0;
     background-color: #517d4b;
@@ -123,6 +124,9 @@ main .sidebar hr {
 #TA_cdsratingsonlynarrow283 {
     margin: 35px;
 }
+.trip-advisor {
+    width: 100%;
+}
 
 blockquote {
     font-style: italic;
@@ -144,7 +148,12 @@ blockquote {
 .carousel-inner img {
     width: 100%;
 }
-.photo-gallery .col-sm-4 {
+
+/*-- Photo Gallery --*/
+.photo-gallery .carousel {
+    margin-top: 15px;
+}
+.photo-gallery .col-xs-4 {
     padding: 2px;
 }
 .photo-gallery .well {
@@ -170,45 +179,38 @@ main .nav-tabs li.active a {
     margin-right: 3em;
     height: 15em;
 }
+
+/*-- FOOTER --*/
+
 footer {
     background-color: #e8e3d9;
-    color: black;
-    font-family: serif;
+    color: #7e7564;
     border-top: 2px solid #517d4b;
-    padding: 10px;
+    padding-top: 25px;
 }
 footer h3 {
     text-align: center;
-    font-size: 5em;
+    font-size: 2.5em;
+    margin:0
 }
 footer h4 {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 footer a {
-    color: black;
+    color: #7e7564;
     font-size: 1em;
 }
-
+footer a:hover {
+    color: #517d4b;
+    text-decoration: none;
 }
 footer p {
-    font-size: 1.6em;
-    margin-top: 4em;
-    padding-top: 4em;
-}
-#address {
-    margin: 2em;
+    font-size: .9em;
 }
 #permitee {
     text-align: right;
-    margin: 2em;
-    margin-left: 0;
-    font-size: 1em;
-}
-footer img {
-    height: 100px;
-    width: 100px;
-    margin: 20px 50px;
+    font-size: .9em;
 }
 figure.bio{
     border: 1px solid #999;
@@ -227,14 +229,23 @@ figure.bio img{
     float: right
 }
 
+@media (max-width: 992px) {
+    h3 {
+        font-size: 2em;
+}
 @media (max-width: 768px) {
     .carousel-caption {
-        padding-top: 5px;
-        top: 30%;
-        padding-left: 15px;
+        padding-right: 0;
+        margin-bottom: 0;
     }
-    h2 {
+    .carousel h2 {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 15px;
+        margin-top: 0;
         text-align: center;
         font-size: 1.5em;
+    }
+    footer p, #permitee {
+        text-align: center;
     }
 }
