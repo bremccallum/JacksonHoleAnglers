@@ -300,3 +300,17 @@ figure.bio img{
         text-align: center;
     }
 }
+    @media (max-width: 700px) {
+    .navbar-brand {
+        height: auto;
+        width: 100%;
+        background-image: url(/images/assets/logo/logo-background.jpg);
+        border-bottom: 5px solid #aba494; 
+    }
+    .navbar-brand img {
+        width: 40%;
+        margin: 0 25%;
+        background-image: none;
+        border: none;
+    }
+}
