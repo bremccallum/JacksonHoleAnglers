@@ -53,8 +53,33 @@ h1 {
     margin-top: 50px;
 }
 .carousel-control {
-  padding-top: 20px;
-  width: 5%;
+    padding-top: 20px;
+    width: 5%;
+}
+.carousel-caption {
+    left: 25%;
+    right: 25%;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    background-color: rgba(5, 29, 73, 0.6);
+}
+.carousel-caption h2 {
+    padding-bottom: 15px;
+}
+.caption-2 {
+    left: 25%;
+    right: 25%;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    background-color: rgba(20, 63, 14, 0.6);
+}
+/*
 }
 .carousel-caption {
     top: 10px;
@@ -75,6 +100,7 @@ h1 {
     margin-top: 0;
     padding-top: 15px;
 }
+*/
 .carousel-control.left, .carousel-control.right {
     background-image: none;
 }
@@ -247,16 +273,19 @@ figure.bio img{
 }
 @media (max-width: 768px) {
     .carousel-caption {
-        padding-right: 0;
+        left: 12%;
+        right: 12%;
         margin-bottom: 0;
     }
-    .carousel h2, .carousel h3 {
-        background-color: rgba(255, 255, 255, 0.6);
-        padding: 15px;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: center;
+    .carousel h2 {
         font-size: 1.5em;
+    }
+    .carousel h3 {
+        font-size: 1em;
+    }
+    .carousel h2, .carousel h3 {
+        padding-right: 15px;
+        text-align: center;
     }
     footer p, #permitee {
         text-align: center;
