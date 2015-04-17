@@ -32,35 +32,65 @@ h1 {
     padding: 0;
     margin: 0;
 }
+#fixed-header {
+    padding-top: 30px;
+}
 .navbar {
     margin-bottom: 0;
     position: fixed;
 }
 .navbar-default {
-    background-color: #e8e3d9;
+    background-color: rgba(0, 0, 0, .5);
     border: none;
+    border-bottom: solid 1px #bbb;
+}
+nav {
+    padding-right: 25px;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #2b2b2b;
+    color: #fff;
 }
-.navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    background-color: #517d4b;
-    color: #e8e3d9;
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: rgba(81, 125, 75, .9);
+    color: #fff;
 }
 a.navbar-brand {
-    padding-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .navbar-brand img {
-    background-image: url(/images/assets/logo/logo-background.jpg);
-    border-bottom:  5px solid #aba494;
-    border-right:  5px solid #aba494;
-    border-left:  5px solid #aba494;
+    margin-top: -30px;
+    margin-left: 25px;
+    width: 250px;
+}
+.navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px 20px; 
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgba(81, 125, 75, .9);
+}
+.navbar-toggle p {
+    margin-bottom: 0px;
+    font-size: 1.3em;
+    color: #fff;
+}
+.navbar-toggle
+.navbar-default .navbar-toggle .icon-bar {
+    background: none;
+}
+.clearfix:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after  {
+    margin-top: 0px;
+    padding: 0;
 }
 
 /*--Carousel--*/
+/*
 .carousel {
     margin-top: 50px;
 }
+*/
 .carousel-control {
     padding-top: 20px;
     width: 5%;
@@ -73,7 +103,7 @@ a.navbar-brand {
     padding-bottom: 20px;
     margin-bottom: 10px;
     padding-bottom: 0;
-    background-color: rgba(5, 29, 73, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .carousel-caption h2 {
     padding-bottom: 15px;
@@ -86,7 +116,7 @@ a.navbar-brand {
     padding-bottom: 10px;
     margin-bottom: 10px;
     padding-bottom: 0;
-    background-color: rgba(20, 63, 14, 0.6);
+/*    background-color: rgba(20, 63, 14, 0.6);*/
 }
 /*
 }
@@ -234,11 +264,15 @@ footer {
     color: #7e7564;
     border-top: 2px solid #517d4b;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 footer h3 {
     text-align: center;
     font-size: 2.5em;
     margin:0
+}
+footer .logos {
+    margin-top: 25px;
 }
 footer h4 {
     text-align: center;
@@ -254,6 +288,10 @@ footer a:hover {
 }
 footer p {
     font-size: .9em;
+}
+footer img:nth-child(2) {
+    height: 80px;
+    width: 150px;
 }
 #permitee {
     text-align: right;
@@ -280,37 +318,25 @@ figure.bio img{
     h3 {
         font-size: 2em;
 }
-@media (max-width: 768px) {
     .carousel-caption {
-        left: 12%;
-        right: 12%;
-        margin-bottom: 0;
-    }
-    .carousel h2 {
-        font-size: 1.5em;
-    }
-    .carousel h3 {
-        font-size: 1em;
-    }
-    .carousel h2, .carousel h3 {
-        padding-right: 15px;
-        text-align: center;
+        display:none;
     }
     footer p, #permitee {
         text-align: center;
     }
 }
-    @media (max-width: 700px) {
-    .navbar-brand {
-        height: auto;
-        width: 100%;
-        background-image: url(/images/assets/logo/logo-background.jpg);
-        border-bottom: 5px solid #aba494; 
+@media (max-width: 825px) {
+    .navbar-brand img {
+        width: 175px;
+        padding-top: 15px;
+    }
+}
+@media (max-width: 768px) {
+    #fixed-header {
+        padding-top: 0px;
     }
     .navbar-brand img {
-        width: 40%;
-        margin: 0 25%;
-        background-image: none;
-        border: none;
+        margin-top: 0px;
+        padding-top: 5px;
     }
 }
