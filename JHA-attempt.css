@@ -33,14 +33,27 @@ h1 {
     margin: 0;
 }
 #fixed-header {
-    padding-top: 30px;
+    padding-top: 45px;
+}
+#fixed-header p {
+    position: fixed;
+    right: 35px;
+    top: 15px;
+    color: #fff;
+}
+#fixed-header p span {
+    font-size: 1.6em;
+}
+#fixed-header p span a {
+    color: #fff;
+    text-decoration: none;
 }
 .navbar {
     margin-bottom: 0;
     position: fixed;
 }
 .navbar-default {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .4);
     border: none;
     border-bottom: solid 1px #bbb;
 }
@@ -51,7 +64,6 @@ nav {
     color: #fff;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    background-color: rgba(81, 125, 75, .9);
     color: #fff;
 }
 a.navbar-brand {
@@ -59,8 +71,9 @@ a.navbar-brand {
     padding-bottom: 5px;
 }
 .navbar-brand img {
-    margin-top: -30px;
-    margin-left: 25px;
+    position: fixed;
+    top: 5px;
+    left: 25px;
     width: 250px;
 }
 .navbar-toggle {
@@ -80,17 +93,10 @@ a.navbar-brand {
 .navbar-default .navbar-toggle .icon-bar {
     background: none;
 }
-.clearfix:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after  {
-    margin-top: 0px;
-    padding: 0;
+#nav-menu-button {
+    color: #fff;
+    font-size: 1.4em;
 }
-
-/*--Carousel--*/
-/*
-.carousel {
-    margin-top: 50px;
-}
-*/
 .carousel-control {
     padding-top: 20px;
     width: 5%;
@@ -116,30 +122,7 @@ a.navbar-brand {
     padding-bottom: 10px;
     margin-bottom: 10px;
     padding-bottom: 0;
-/*    background-color: rgba(20, 63, 14, 0.6);*/
 }
-/*
-}
-.carousel-caption {
-    top: 10px;
-    right: 10px;
-    left: 30%;
-    bottom: 30%;
-    padding-right: 50px;
-    text-shadow: none;
-    color: #fff; 
-}
-.carousel-caption h3 {
-    text-align: right;
-    font-size: 1.3em;
-    text-transform: uppercase;
-}
-.carousel-caption h2 {
-    text-align: right;
-    margin-top: 0;
-    padding-top: 15px;
-}
-*/
 .carousel-control.left, .carousel-control.right {
     background-image: none;
 }
@@ -335,8 +318,11 @@ figure.bio img{
     #fixed-header {
         padding-top: 0px;
     }
+    #nav-menu-button {
+        margin-top: 30px;
+    }
     .navbar-brand img {
-        margin-top: 0px;
+        margin-top: 25px;
         padding-top: 5px;
     }
 }
